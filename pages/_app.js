@@ -1,14 +1,17 @@
 import "../styles/globals.css";
 import { Container } from "react-bootstrap";
 import NavigationBar from "../components/navigationBar";
+import ProplusNavbar from "../components/proplusNavbar";
 
-import 'bootstrap/dist/css/bootstrap.min.css'
-
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function MyApp({ Component, pageProps }) {
   return (
     <div>
-      <NavigationBar />
+      <div className="mb-4">
+        <ProplusNavbar />
+        <NavigationBar />
+      </div>
       <Container fluid>
         <Component {...pageProps} />
       </Container>

@@ -6,7 +6,7 @@ class CartContainer extends Component {
   render() {
     return (
       <div>
-        <Cart />
+        <Cart items='My items' />
       </div>
     );
   }
