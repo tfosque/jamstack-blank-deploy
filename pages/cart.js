@@ -1,8 +1,14 @@
-import Cart from '../components/cart'
+import { Component } from "react";
+import Cart from "../components/cart";
 
 /* Cart Container */
-export default function CartContainer() {
+class CartContainer extends Component {
+  render() {
     return (
-        <div><Cart /></div>
-    )
+      <div>
+        <Cart />
+      </div>
+    );
+  }
 }
+export default CartContainer
