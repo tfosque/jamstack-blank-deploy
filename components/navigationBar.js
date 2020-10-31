@@ -1,6 +1,11 @@
-import { Nav, Navbar, NavDropdown } from "react-bootstrap";
-
 import { Component } from "react";
+import { Nav, Navbar, NavDropdown } from "react-bootstrap";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faSignOutAlt,
+  faShoppingCart,
+} from '@fortawesome/free-solid-svg-icons';
+
 
 class NavigationBar extends Component {
   constructor(props) {
@@ -9,7 +14,7 @@ class NavigationBar extends Component {
   }
   render() {
     return (
-      <Navbar bg="dark">
+      <Navbar bg="dark" variant="dark">
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav
