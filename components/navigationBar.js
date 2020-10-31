@@ -29,9 +29,11 @@ class NavigationBar extends Component {
                   background: "#007bff",
                   padding: "6px 8px",
                   borderRadius: "4px",
+                  color: "#fff"
                 }}
               >
-                Cart
+                <FontAwesomeIcon icon={faShoppingCart} />
+                &nbsp; Cart
               </span>
             </Nav.Link>
             <NavDropdown title="My Account" id="basic-nav-dropdown">
